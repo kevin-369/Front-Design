@@ -67,7 +67,6 @@ h6 {
     display: flex;
     align-items: center;
     z-index: 997;
-    overflow-y: auto;
 }
 
 #header * {
@@ -405,6 +404,30 @@ section .container {
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     color: #fff;
+}
+
+a.btn.mr-lg-2.custom-btn {
+    border-color: #ffffff;
+    color: #ffffff;
+    margin: 42px 0 0 23px;
+    padding: 0px 1rem;
+    font-size: 0.8rem;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    position: inherit;
+    background: transparent !important;
+    border: 0.2rem solid #242424;
+    color: rgba(255, 255, 255, 0.7);
+    /* height: 10% !important; */
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: .1rem;
+    line-height: 2.2rem !important;
+    z-index: 99999;
+}
+
+a.btn.mr-lg-2.custom-btn:hover {
+    background-color: #18d26fa6 !important;
+    border-color: #18d26fa6 !important;
 }
 
 
