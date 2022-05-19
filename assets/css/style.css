@@ -21,7 +21,7 @@ body {
 body::before {
     content: "";
     position: fixed;
-    background: #040404 url("../img/bg_cleanup.jpg") top right no-repeat;
+    background: #040404 url("../img/gustavo-boaron-MOrktvosl6k-unsplash.jpg") top right no-repeat;
     background-size: cover;
     left: 0;
     right: 0;
@@ -172,6 +172,7 @@ h6 {
 #header.header-top .container {
     display: flex;
     align-items: center;
+    flex-direction: row;
 }
 
 #header.header-top .navbar {
