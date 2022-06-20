@@ -22,7 +22,11 @@
 </head>
 
 <body class="template-color-1 spybody white-version" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
-
+    <!--CSS Spinner-->
+    <div class="spinner-wrapper">
+        <img src="./assets/images/trianglespinner.gif" alt="" class="img-fluid">
+        <div class="spinner"></div>
+    </div>
     <div class="cur" id="circle">
         <div class="main-cur"></div><img class="satelite" src="https://bit.ly/30JAPdZ" alt="">
     </div>
@@ -1902,6 +1906,21 @@
   <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
   <!-- main JS -->
   <script src="assets/js/main.js"></script>
+    <script>
+                $(document).ready(function() {
+                    //Preloader
+                    preloaderFadeOutTime = 1500;
+
+                    function hidePreloader() {
+                        var preloader = $('.spinner-wrapper');
+                        preloader.fadeOut(preloaderFadeOutTime);
+                    }
+                    hidePreloader();
+                });
+                $("#cookie-popup button").click(function() {
+                    $("#cookie-popup").fadeOut();
+                });
+            </script>
  </body>
 
  <!-- Mirrored from rainbowit.net/html/inbio/index-white-version.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Jun 2022 09:02:04 GMT -->

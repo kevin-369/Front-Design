@@ -134,7 +134,7 @@ body {
     font-family: var(--font-primary);
     color: var(--color-body);
     font-weight: var(--p-regular);
-    cursor: none;
+    /* cursor: none; */
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -20905,4 +20905,41 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     outline: 1px solid slategrey;
+}
+
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f5f7f9;
+    z-index: 999999;
+    background-size: 1000%;
+}
+
+.spinner-wrapper .img-fluid {
+    max-width: 60%;
+    height: auto;
+    margin: 0em 0 0 12em;
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .spinner-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #f5f7f9;
+        z-index: 999999;
+        background-size: 1000%;
+    }
+    .spinner-wrapper .img-fluid {
+        max-width: 100%;
+        height: auto;
+        margin: 10em 0 0 0em;
+        width: 100%;
+    }
 }
